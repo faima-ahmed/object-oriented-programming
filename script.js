@@ -37,3 +37,17 @@ console.log(faima.species, khalid.species);
 
 console.log(faima.hasOwnProperty('firstName'));
 console.log(faima.hasOwnProperty('species'));
+console.log(faima.__proto__);
+console.log(faima.__proto__.proto__);
+console.log(faima.__proto__.__proto__.proto__);
+
+console.dir(Person.prototype.constructor);
+
+const arr=[3, 6, 6, 5, 6, 9, 9];
+console.log(arr.__proto__);
+
+Array.prototype.unique= function(){
+  return [...new Set(this)];
+}
+
+console.log(arr.unique());
