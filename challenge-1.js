@@ -32,3 +32,10 @@ Car.prototype.brake= function(){
 const bmw= new Car('BMW', 120);
 const mercedes= new Car('Mercedes', 95);
 
+bmw.accelerate();
+bmw.accelerate();
+bmw.brake();
+bmw.accelerate();
+
+
+
