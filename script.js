@@ -1,4 +1,5 @@
 'use strict';
+/*
 const Person= function(firstName, birthYear){
   this.firstName = firstName;
   this.birthYear = birthYear;
@@ -51,3 +52,15 @@ Array.prototype.unique= function(){
 }
 
 console.log(arr.unique());
+*/
+//es6 classes
+class PersonCl{
+  constructor(firstName, birthYear){
+     this.firstName = firstName;
+     this.birthYear = birthYear;
+  }
+
+}  
+
+const jessica= new PersonCl('Jessica', 1996);
+console.log(jessica);
