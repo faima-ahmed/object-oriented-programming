@@ -54,7 +54,7 @@ Array.prototype.unique= function(){
 console.log(arr.unique());
 */
 //es6 classes
-
+/*
 class PersonCl{
   constructor(fullName, birthYear){
      this.fullName = fullName;
@@ -117,3 +117,14 @@ console.log(account.latest);
 
 account.latest=50;
 console.log(account.movements);
+*/
+
+const Personproto={
+  calcAge(){
+    console.log(2037-this.birthYear);
+  },
+  
+}
+
+const steven= Object.create(Personproto);
+console.log(steven);
